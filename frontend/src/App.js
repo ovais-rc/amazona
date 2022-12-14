@@ -19,10 +19,12 @@ function App() {
           </Navbar>
         </header>
         <main>
-          <Routes>
-            <Route path="/" element={<HomeScreen />} />
-            <Route path="/product/:slug" element={<ProductScreen />} />
-          </Routes>
+          <Container className="mt-3">
+            <Routes>
+              <Route path="/" element={<HomeScreen />} />
+              <Route path="/product/:slug" element={<ProductScreen />} />
+            </Routes>
+          </Container>
         </main>
         <footer>
           <div className="text-center">All rights reserved</div>
